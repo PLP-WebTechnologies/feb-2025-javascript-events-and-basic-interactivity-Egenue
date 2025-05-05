@@ -1,4 +1,3 @@
-// Event Handling
 document.getElementById("clickBtn").addEventListener("click", () => {
   alert("Button clicked!");
 });
@@ -19,7 +18,6 @@ document.getElementById("clickBtn").addEventListener("dblclick", () => {
   alert("🎉 Double-click detected! Secret action activated!");
 });
 
-// Long-press detection
 let pressTimer;
 const longPressBtn = document.getElementById("longPressBtn");
 longPressBtn.addEventListener("mousedown", () => {
@@ -30,7 +28,6 @@ longPressBtn.addEventListener("mousedown", () => {
 longPressBtn.addEventListener("mouseup", () => clearTimeout(pressTimer));
 longPressBtn.addEventListener("mouseleave", () => clearTimeout(pressTimer));
 
-// Interactive Elements
 document.getElementById("changeColorBtn").addEventListener("click", () => {
   const box = document.getElementById("colorBox");
   box.style.backgroundColor = box.style.backgroundColor === "coral" ? "skyblue" : "coral";
@@ -39,8 +36,7 @@ document.getElementById("changeColorBtn").addEventListener("click", () => {
 let imageIndex = 1;
 function nextImage() {
   imageIndex = (imageIndex % 3) + 1;
-  document.getElementById("galleryImage").src =
-    \`https://via.placeholder.com/300x200?text=Image+\${imageIndex}\`;
+  document.getElementById("galleryImage").src = `https://via.placeholder.com/300x200?text=Image+${imageIndex}`;
 }
 
 function showTab(tabId) {
@@ -57,7 +53,7 @@ function triggerAnimation() {
 }
 
 // Form Validation
-document.getElementById("signupForm").addEventListener("submit", function(e) {
+document.getElementById("signupForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
   const email = document.getElementById("email").value.trim();
