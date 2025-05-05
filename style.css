@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#hoverArea {
+  width: 200px;
+  height: 100px;
+  background-color: #ddd;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 100px;
+  transition: background-color 0.3s;
+}
+
+#colorBox {
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  margin-top: 10px;
+}
+
+#tabs .tab-content {
+  padding: 10px;
+  border: 1px solid #aaa;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}

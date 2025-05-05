@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎉 Welcome to the JavaScript Playground!</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>1. Event Handling</h2>
+      <button id="clickBtn">Click Me!</button>
+      <div id="hoverArea">Hover over me!</div>
+      <input type="text" id="keyInput" placeholder="Type something..." />
+      <button id="longPressBtn">Hold Me</button>
+    </section>
+
+    <section>
+      <h2>2. Interactive Elements</h2>
+      <button id="changeColorBtn">Change Color</button>
+      <div id="colorBox">I'm colorful!</div>
+
+      <div id="slideshow">
+        <img id="galleryImage" src="https://via.placeholder.com/300x200?text=Image+1" alt="Gallery" />
+        <button onclick="nextImage()">Next</button>
+      </div>
+
+      <div id="tabs">
+        <button onclick="showTab('tab1')">Tab 1</button>
+        <button onclick="showTab('tab2')">Tab 2</button>
+        <div id="tab1" class="tab-content">This is content for Tab 1.</div>
+        <div id="tab2" class="tab-content hidden">This is content for Tab 2.</div>
+      </div>
+
+      <div id="animatedBox" class="fade-in">Hello, World!</div>
+    </section>
+
+    <section>
+      <h2>3. Form Validation</h2>
+      <form id="signupForm">
+        <label>Email: <input type="email" id="email" required /></label><br/>
+        <label>Password: <input type="password" id="password" required /></label><br/>
+        <button type="submit">Sign Up</button>
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JavaScript Playground</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
